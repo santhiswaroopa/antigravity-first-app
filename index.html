@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankalp AI Labs – Innovate. Build. Transform.</title>
+  <meta name="description"
+    content="Sankalp AI Labs delivers cutting-edge Full Stack AI Development solutions. We innovate, build, and transform businesses with intelligent technology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo" onclick="showPage('home')">
+        <div class="logo-icon">⚡</div>
+        <span>Sankalp<span class="accent">AI</span> Labs</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" onclick="showPage('home')" id="nav-home" class="nav-link active">Home</a></li>
+        <li><a href="#" onclick="showPage('about')" id="nav-about" class="nav-link">About</a></li>
+        <li><a href="#" onclick="showPage('team')" id="nav-team" class="nav-link">Our Team</a></li>
+        <li><a href="#" onclick="showPage('services')" id="nav-services" class="nav-link">Services</a></li>
+        <li><a href="#" onclick="showPage('contact')" id="nav-contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME PAGE ===== -->
+  <section class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-bg">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+        <div class="grid-lines"></div>
+      </div>
+      <div class="hero-content">
+        <div class="badge-pill">🚀 Full Stack AI Development Studio</div>
+        <h1 class="hero-title">We Build <span class="gradient-text">Intelligent</span><br />AI-Powered Products</h1>
+        <p class="hero-sub">Sankalp AI Labs crafts cutting-edge AI solutions that transform businesses. From concept to
+          deployment — we innovate, build, and lead.</p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="showPage('services')">Explore Services</button>
+          <button class="btn-ghost" onclick="showPage('contact')">Get In Touch →</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">AI Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Team Members</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Commitment</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ai-globe">
+          <div class="globe-ring ring1"></div>
+          <div class="globe-ring ring2"></div>
+          <div class="globe-ring ring3"></div>
+          <div class="globe-core">
+            <span>AI</span>
+          </div>
+          <div class="floating-chip chip1">🧠 Next.js</div>
+          <div class="floating-chip chip2">⚙️ AI</div>
+          <div class="floating-chip chip3">🔗 API</div>
+          <div class="floating-chip chip4">☁️ Cloud</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Full Stack AI Development</span><span>·</span>
+        <span>Machine Learning</span><span>·</span>
+        <span>Natural Language Processing</span><span>·</span>
+        <span>Computer Vision</span><span>·</span>
+        <span>API Integration</span><span>·</span>
+        <span>Cloud Deployment</span><span>·</span>
+        <span>Full Stack AI Development</span><span>·</span>
+        <span>Machine Learning</span><span>·</span>
+        <span>Natural Language Processing</span><span>·</span>
+        <span>Computer Vision</span><span>·</span>
+        <span>API Integration</span><span>·</span>
+        <span>Cloud Deployment</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features-section">
+      <div class="section-header">
+        <p class="section-tag">What We Do</p>
+        <h2>Built for the <span class="gradient-text">AI Era</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Custom ML models trained for your specific domain and business logic.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end web applications powered by intelligent AI backends.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>API & Integration</h3>
+          <p>Seamless integration of AI APIs into your existing products and workflows.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>Cloud & Deployment</h3>
+          <p>Scalable cloud infrastructure for reliable AI product delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PAGE ===== -->
+  <section class="page" id="page-about">
+    <div class="inner-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="section-header">
+        <p class="section-tag">Our Story</p>
+        <h1>About <span class="gradient-text">Sankalp AI Labs</span></h1>
+        <p class="hero-sub" style="max-width:600px;margin:0 auto;">We are a passionate team of AI builders who believe
+          in creating real-world products that matter.</p>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-card glass-card">
+        <div class="about-icon">⚡</div>
+        <h3>Our Mission</h3>
+        <p>At Sankalp AI Labs, we are on a mission to democratize AI — making powerful intelligent systems accessible to
+          every business, startup, and visionary. We innovate, build, and transform.</p>
+      </div>
+      <div class="about-card glass-card">
+        <div class="about-icon">🔭</div>
+        <h3>Our Vision</h3>
+        <p>To be a leading AI development studio where every product we ship solves a real problem — one that earns user
+          trust, drives growth, and creates a meaningful future.</p>
+      </div>
+      <div class="about-card glass-card">
+        <div class="about-icon">🤝</div>
+        <h3>Our Values</h3>
+        <p>We believe in learning beyond comfort, taking ownership, and building with confidence. Every team member is a
+          creator, a doer, and a future leader in AI.</p>
+      </div>
+    </div>
+
+    <div class="timeline-section">
+      <div class="section-header">
+        <p class="section-tag">Journey</p>
+        <h2>How We <span class="gradient-text">Grew</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">Foundation</span>
+            <h4>The Beginning</h4>
+            <p>Sankalp AI Labs was founded with a bold vision — to build AI products that create real impact.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">Growth</span>
+            <h4>First Products Shipped</h4>
+            <p>Our team completed their first AI projects, proving that learning and doing go hand in hand.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year">Today</span>
+            <h4>Building the Future</h4>
+            <p>Expanding our services with full-stack AI development and growing a team of confident AI creators.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collab-banner glass-card">
+      <div class="collab-text">
+        <p class="section-tag">In collaboration with</p>
+        <h3>The Sun Technologies</h3>
+        <p>Learn. Implement. Lead.</p>
+      </div>
+      <div class="collab-tagline">
+        <span>🚀</span>
+        <p><em>"The future belongs to those who create — and today, we take our first real step into that future."</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM PAGE ===== -->
+  <section class="page" id="page-team">
+    <div class="inner-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="section-header">
+        <p class="section-tag">The People</p>
+        <h1>Meet Our <span class="gradient-text">Team</span></h1>
+        <p class="hero-sub" style="max-width:580px;margin:0 auto;">Four dedicated builders guided by an expert mentor —
+          together we create, innovate, and lead.</p>
+      </div>
+    </div>
+
+    <!-- Mentor -->
+    <div class="mentor-section">
+      <p class="section-tag" style="text-align:center;margin-bottom:2rem;">Our Guide</p>
+      <div class="mentor-card glass-card">
+        <div class="mentor-avatar">
+          <img src="images/mentor.png" alt="Mentor" />
+          <div class="mentor-badge">Mentor</div>
+        </div>
+        <div class="mentor-info">
+          <h2>Our Mentor</h2>
+          <p class="mentor-title">AI Industry Expert & Guide</p>
+          <p class="mentor-desc">Our mentor brings industry expertise and wisdom that shapes our path. He believes in
+            creating doers — and pushes each of us to build beyond our comfort zone. At Sankalp AI Labs and The Sun
+            Technologies, his leadership is our launchpad.</p>
+          <div class="mentor-quote">"This is not the destination — this is your launchpad."</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="team-section">
+      <p class="section-tag" style="text-align:center;margin-bottom:2rem;">Core Team</p>
+      <div class="team-grid">
+
+        <div class="team-card glass-card" id="card-santhi">
+          <div class="team-avatar-wrap">
+            <img src="images/santhi.png" alt="Santhi Swaroopa" class="team-avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+          <h3>Santhi Swaroopa</h3>
+          <p class="team-role">AI Developer</p>
+          <p class="team-desc">Her dedication and focus reflect clearly in every product she builds. A consistent
+            performer who keeps pushing her limits every single day.</p>
+          <div class="team-tag">🎯 Dedication & Focus</div>
+          <div class="team-links">
+            <span class="tlink">🔗 LinkedIn</span>
+            <span class="tlink">📧 Email</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" id="card-sowmya">
+          <div class="team-avatar-wrap">
+            <img src="images/sowmya.png" alt="Sowmya" class="team-avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+          <h3>Sowmya</h3>
+          <p class="team-role">AI Developer</p>
+          <p class="team-desc">Her consistency and commitment have made a strong impact on every project. This is just
+            her beginning — and it's already impressive.</p>
+          <div class="team-tag">📈 Consistency & Commitment</div>
+          <div class="team-links">
+            <span class="tlink">🔗 LinkedIn</span>
+            <span class="tlink">📧 Email</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" id="card-karthik">
+          <div class="team-avatar-wrap">
+            <img src="images/karthik.png" alt="Karthik" class="team-avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+          <h3>Karthik</h3>
+          <p class="team-role">AI Developer</p>
+          <p class="team-desc">His execution and involvement show great potential. Karthik takes ownership of his work
+            and continues to grow with every challenge.</p>
+          <div class="team-tag">⚙️ Execution & Ownership</div>
+          <div class="team-links">
+            <span class="tlink">🔗 LinkedIn</span>
+            <span class="tlink">📧 Email</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card" id="card-shabreen">
+          <div class="team-avatar-wrap">
+            <img src="images/shabreen.png" alt="Shabreen" class="team-avatar" />
+            <div class="avatar-glow"></div>
+          </div>
+          <h3>Shabreen</h3>
+          <p class="team-role">AI Developer</p>
+          <p class="team-desc">Her learning attitude and persistence are her biggest strengths. Shabreen builds with
+            confidence and embraces every challenge as an opportunity.</p>
+          <div class="team-tag">💡 Learning & Persistence</div>
+          <div class="team-links">
+            <span class="tlink">🔗 LinkedIn</span>
+            <span class="tlink">📧 Email</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="team-group-photo glass-card">
+      <h3 style="text-align:center;margin-bottom:1rem;color:#fff;">Together We Build</h3>
+      <p style="text-align:center;color:var(--text-muted);margin-bottom:2rem;">Let's create. Let's innovate. Let's lead.
+        🚀</p>
+      <div class="group-badges">
+        <span class="badge-item">Build more.</span>
+        <span class="badge-item">Experiment more.</span>
+        <span class="badge-item">Improve every day.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PAGE ===== -->
+  <section class="page" id="page-services">
+    <div class="inner-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="section-header">
+        <p class="section-tag">What We Offer</p>
+        <h1>Full Stack <span class="gradient-text">AI Development</span></h1>
+        <p class="hero-sub" style="max-width:600px;margin:0 auto;">End-to-end intelligent solutions — from data to
+          deployment, we handle every layer of the AI stack.</p>
+      </div>
+    </div>
+
+    <div class="services-hero-card glass-card">
+      <div class="shc-icon">🚀</div>
+      <div class="shc-content">
+        <h2>Full Stack AI Development</h2>
+        <p>Our flagship service covers the complete AI development lifecycle. We design, build, train, deploy, and
+          maintain AI-powered applications — end to end.</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass-card">
+        <div class="sc-icon">🧠</div>
+        <h3>Machine Learning Models</h3>
+        <p>Custom-trained ML models for classification, prediction, recommendation, and anomaly detection tailored to
+          your data.</p>
+        <ul class="sc-list">
+          <li>Supervised & Unsupervised Learning</li>
+          <li>Model Fine-tuning</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card">
+        <div class="sc-icon">💬</div>
+        <h3>NLP & Conversational AI</h3>
+        <p>Build intelligent chatbots, sentiment analyzers, and language-powered tools using state-of-the-art NLP
+          techniques.</p>
+        <ul class="sc-list">
+          <li>Chatbot Development</li>
+          <li>Sentiment Analysis</li>
+          <li>Text Classification</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card">
+        <div class="sc-icon">👁️</div>
+        <h3>Computer Vision</h3>
+        <p>Intelligent image and video processing solutions — from object detection to facial recognition and beyond.
+        </p>
+        <ul class="sc-list">
+          <li>Object Detection</li>
+          <li>Image Classification</li>
+          <li>Real-time Video Analysis</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card">
+        <div class="sc-icon">🌐</div>
+        <h3>Web & API Development</h3>
+        <p>Full-stack web applications with AI-powered backends, RESTful APIs, and seamless frontend experiences.</p>
+        <ul class="sc-list">
+          <li>React / Next.js Frontends</li>
+          <li>FastAPI / Node Backends</li>
+          <li>Database Design</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card">
+        <div class="sc-icon">☁️</div>
+        <h3>Cloud Deployment</h3>
+        <p>Scalable, reliable cloud infrastructure setup for your AI models and applications with CI/CD pipelines.</p>
+        <ul class="sc-list">
+          <li>AWS / GCP / Azure</li>
+          <li>Docker & Kubernetes</li>
+          <li>CI/CD Pipelines</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card">
+        <div class="sc-icon">📊</div>
+        <h3>Data Engineering</h3>
+        <p>Clean, transform, and pipeline your data for AI readiness. We build the data foundation your models need.</p>
+        <ul class="sc-list">
+          <li>Data Collection & Cleaning</li>
+          <li>ETL Pipelines</li>
+          <li>Analytics Dashboards</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-banner glass-card">
+      <h2>Ready to Build Something <span class="gradient-text">Intelligent?</span></h2>
+      <p>Let's turn your idea into a fully functional AI product.</p>
+      <button class="btn-primary" onclick="showPage('contact')">Start a Project →</button>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT PAGE ===== -->
+  <section class="page" id="page-contact">
+    <div class="inner-hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="section-header">
+        <p class="section-tag">Get In Touch</p>
+        <h1>Let's <span class="gradient-text">Connect</span></h1>
+        <p class="hero-sub" style="max-width:540px;margin:0 auto;">Have a project idea or want to collaborate? We'd love
+          to hear from you.</p>
+      </div>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-item glass-card">
+          <div class="ci-icon">📧</div>
+          <div>
+            <h4>Email Us</h4>
+            <p>hello@sankalpailabs.com</p>
+          </div>
+        </div>
+        <div class="contact-item glass-card">
+          <div class="ci-icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+        </div>
+        <div class="contact-item glass-card">
+          <div class="ci-icon">🤝</div>
+          <div>
+            <h4>Partnership</h4>
+            <p>The Sun Technologies</p>
+          </div>
+        </div>
+        <div class="contact-values glass-card">
+          <h4>Our Motto</h4>
+          <div class="motto-list">
+            <span>🚀 Build more.</span>
+            <span>🧠 Experiment more.</span>
+            <span>🛡️ Improve every day.</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card" id="contactForm" onsubmit="handleSubmit(event)">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label for="fname">Your Name</label>
+          <input type="text" id="fname" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" placeholder="AI Project Collaboration" required />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Tell us about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%">Send Message 🚀</button>
+        <div id="form-success" class="form-success" style="display:none">✅ Message sent! We'll get back to you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">⚡</div>
+          <span>Sankalp<span class="accent">AI</span> Labs</span>
+        </div>
+        <p>Innovate. Build. Transform.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('team')">Team</a>
+        <a href="#" onclick="showPage('services')">Services</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Sankalp AI Labs · In collaboration with The Sun Technologies · Let's create. Let's
+        innovate. Let's lead. 🚀</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
